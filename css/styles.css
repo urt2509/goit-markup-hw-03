@@ -343,23 +343,26 @@ img {
   letter-spacing: inherit;
 }
 
-/* Portfolio */
-
-.projects {
-  background-color: var(--primary-bcg-color);
-}
+/* Page Portfolio */
 
 /* Filter buttons */
 
+.list.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+
 .secondary {
   padding: 6px 22px;
+  border: transparent;
   background-color: var(--filters-button-bcg-color);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
-  outline: 3px solid tomato;
 }
 
 .button.secondary:hover,
@@ -370,17 +373,36 @@ img {
 
 /* Projects */
 
+.projects {
+  background-color: var(--primary-bcg-color);
+  text-align: left;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.projects-list .projects {
+  flex-basis: calc((100% - 90px) / 9);
+}
+
+.projects > .description {
+  margin: 20px 24px;
+}
+
 .projects .title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-transform: none;
-  outline: 3px solid tomato;
 }
 
 .projects-item {
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
-  outline: 3px solid tomato;
 }
