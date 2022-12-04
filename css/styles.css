@@ -388,8 +388,12 @@ img {
   flex-basis: calc((100% - 90px) / 9);
 }
 
-.projects > .description {
-  margin: 20px 24px;
+.projects .description {
+  display: block;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .projects .title {
@@ -402,7 +406,7 @@ img {
 }
 
 .projects-item {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.88;
 }
