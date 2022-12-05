@@ -52,9 +52,12 @@ img {
 }
 
 .list {
-  list-style: none;
-  padding-left: 0;
+  display: flex;
   margin: 0;
+  margin-left: auto;
+  padding-left: 0;
+  align-items: center;
+  list-style: none;
 }
 
 .link {
@@ -164,10 +167,6 @@ img {
   margin-left: 40px;
 }
 
-.list.header-nav {
-  margin-left: 354px;
-}
-
 .contact {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -217,7 +216,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* align-items: center; */
   letter-spacing: 0.06em;
 }
 
@@ -323,6 +321,10 @@ img {
 .container.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-bcg .list {
+  display: block;
 }
 
 .logo-item {
